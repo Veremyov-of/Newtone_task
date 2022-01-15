@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Newtone_task/static/css/main.0595d5e7.css",
+    "main.js": "/Newtone_task/static/js/main.a07b5fa7.js",
+    "index.html": "/Newtone_task/index.html",
+    "main.0595d5e7.css.map": "/Newtone_task/static/css/main.0595d5e7.css.map",
+    "main.a07b5fa7.js.map": "/Newtone_task/static/js/main.a07b5fa7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0595d5e7.css",
+    "static/js/main.a07b5fa7.js"
+  ]
+}
