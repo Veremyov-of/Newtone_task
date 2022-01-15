@@ -2,7 +2,6 @@
 import '../css/fruitsCard.css';
 
 export default function FruitsCard({info, addBasket}) {
-    
     return(
         <div className="card">
            <div className="card-wrapp-img">

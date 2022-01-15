@@ -1,10 +1,8 @@
 //css
 import '../css/home.css'
 
-
 //components
 import FruitsCard from "./FruitsCard";
-
 
 export default function Home({ fruits, addBasket }) {
     return (
