@@ -91,6 +91,7 @@ function App() {
   }
 
   function inputChange(value, id) {
+    if(value < 0) return
     let newBasket = {...basket};
     newBasket.products = [...basket.products];
 
@@ -135,7 +136,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router basename='/Newtone_task'>
       <Header sumPrice={basket.sumPrice}/>
       <Switch>
         <Route exact path='/'>
