@@ -1,4 +1,7 @@
-export default function ItemBasket({info}) {
+//css
+import "../css/itemBasket.css";
+
+export default function ItemBasket({info, deleteBasket, inputChange, addKgBtn, reduceKgBtn}) {
     return(
         <div className="card-basket">
             <div className="card-basket-img">
@@ -7,14 +10,14 @@ export default function ItemBasket({info}) {
             <div className="card-basket-wrapp">
                 <h2 className="card-basket-name">{info.name}</h2>
                 <div className="card-basket-container">
-                    <button>-</button>
-                    <input value={info.sum}/>
-                    <button>+</button>
-                    <div>kg</div>
+                    <button onClick={() => reduceKgBtn(info.id)} className="card-basket-btn">-</button>
+                    <input type="number" onChange={(event) => inputChange(event.target.value, info.id)} className="card-basket-input" value={info.sum}/>
+                    <button onClick={() => addKgBtn(info.id)} className="card-basket-btn">+</button>
+                    <div className="card-basket-kg">kg</div>
                 </div>
                 <h3 className="card-basket-price">{info.price}$</h3>
             </div>
-            <button className="card-basket-delBtn">
+            <button onClick={() => deleteBasket(info)} className="card-basket-delBtn">
                 <img className="card-basket-delImg" alt="icon-del" src="./img/icon-del.png" />
             </button>
         </div>

@@ -1,3 +1,4 @@
+//css
 import '../css/fruitsCard.css';
 
 export default function FruitsCard({info, addBasket}) {
