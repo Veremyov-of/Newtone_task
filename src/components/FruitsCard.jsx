@@ -12,7 +12,7 @@ export default function FruitsCard({info, addBasket}) {
                <h4 className="card-text">(1kg)</h4>
            </div>
            <div className="card-wrapp-price_btn">
-                <h5 className="card-price">{info.price}$</h5>
+                <h5 className="card-price">{info.priceOne}$</h5>
                 <button onClick={() => addBasket(info)} className="card-btn">add</button>
            </div>
         </div>
