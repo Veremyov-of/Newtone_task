@@ -5,12 +5,12 @@ import "../css/basket.css";
 import ItemBasket from "./ItemBasket";
 
 export default function Basket({basket, addBasket, reduceBasket, deleteItemBasket}) {
-    
+    let sum = basket.reduce((a, b) => a + b.price, 0);
     return(
         <div className="container">
             { basket.length > 0 ?
                 <div>
-                    <h1 className="sumPrice">Order Price: {basket.sumPrice}$</h1>
+                    <h1 className="sumPrice">Order Price: {sum}$</h1>
                     <div className="wrapp_item">
                     { basket.map(item => 
                             <ItemBasket deleteItemBasket={deleteItemBasket} reduceBasket={reduceBasket} addBasket={addBasket} key={item.id} info={item} />
